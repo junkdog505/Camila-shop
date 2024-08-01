@@ -1,4 +1,3 @@
-/* Estilos para la página "Nosotros" */
 .about-us {
   padding: 40px 20px;
   background-color: #f4f4f4;
@@ -25,7 +24,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 100%;
-  max-width: 800px; /* Asegura que las tarjetas no se expandan demasiado en pantallas grandes */
+  max-width: 800px;
   box-sizing: border-box;
   text-align: left;
   display: flex;
@@ -34,18 +33,18 @@
 }
 
 .card img {
-  max-width: 100%; /* Ajusta la imagen para que no exceda el ancho del contenedor */
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   margin-bottom: 15px;
-  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarla */
-  max-height: 200px; /* Establece una altura máxima para la imagen */
+  object-fit: cover;
+  max-height: 200px;
 }
 
 .card h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #e23636; /* Color destacado para los títulos */
+  color: #e23636;
 }
 
 .card p {
@@ -56,10 +55,10 @@
 
 @media (max-width: 768px) {
   .card-container {
-    padding: 0 10px; /* Añade algo de padding horizontal en pantallas pequeñas */
+    padding: 0 10px;
   }
 
   .card {
-    max-width: 100%; /* Asegura que las tarjetas ocupen todo el ancho disponible */
+    max-width: 100%;
   }
 }

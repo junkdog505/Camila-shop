@@ -1,198 +1,176 @@
-/* Barra de navegación principal */
 .navbar {
-    background-color: #1f1f1f; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    display: flex; /* Disposición de los elementos */
-    justify-content: space-between; /* Distribución de los elementos */
-    align-items: center; /* Alineación vertical */
-    padding: 10px 15px; /* Espaciado interno */
-    position: relative; /* Posicionamiento relativo para los hijos */
+    background-color: #1f1f1f;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: relative;
 }
 
-/* Contenedor dentro de la barra de navegación */
 .container {
-    display: flex; /* Alineación de los elementos internos */
-    align-items: center; /* Centra verticalmente */
-    width: 100%; /* Ancho completo */
-    max-width: 1200px; /* Ancho máximo */
-    margin: 0 auto; /* Centra horizontalmente */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Logo o marca en la barra de navegación */
 .navbar-brand {
-    font-size: 24px; /* Tamaño del texto */
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
 }
 
 .navbar-brand:hover {
     color:#e23636;
-    transition: color 0.3s, color 0.3s; /* Transiciones suaves */  
+    transition: color 0.3s;
 }
 
-/* Contenedor de los elementos de navegación */
 #navbar-collapse {
-    display: flex; /* Alineación de los elementos internos */
-    align-items: center; /* Centra verticalmente */
-    flex-grow: 1; /* Permite expansión del contenedor */
-    justify-content: flex-end; /* Alineación a la derecha */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
-/* Lista de elementos de navegación */
 .navbar-nav {
-    list-style: none; /* Elimina los puntos de lista */
-    display: flex; /* Disposición en fila */
-    margin: 0; /* Sin márgenes */
-    padding: 0; /* Sin relleno */
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/* Elemento de la lista de navegación */
 .nav-item {
-    position: relative; /* Posicionamiento relativo para los hijos */
+    position: relative;
 }
 
-/* Enlaces de navegación */
 .nav-link {
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    padding: 15px 20px; /* Espaciado interno */
-    display: block; /* Ocupa todo el espacio disponible */
-    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Enlaces de navegación al pasar el ratón */
 .nav-link:hover {
-    background-color: #e23636; /* Color de fondo al pasar el ratón */
-    color: #fff; /* Color del texto al pasar el ratón */
+    background-color: #e23636;
+    color: #fff;
 }
 
-/* Menú desplegable */
 .dropdown {
-    position: relative; /* Posicionamiento relativo para el menú desplegable */
+    position: relative;
 }
 
-/* Activador del menú desplegable */
 .dropdown > .dropdown-toggle {
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    padding: 15px 20px; /* Espaciado interno */
-    display: block; /* Ocupa todo el espacio disponible */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
-    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Activador del menú desplegable al pasar el ratón */
 .dropdown > .dropdown-toggle:hover {
-    background-color: #e23636; /* Color de fondo al pasar el ratón */
-    color: #fff; /* Color del texto al pasar el ratón */
+    background-color: #e23636;
+    color: #fff;
 }
 
-/* Contenido del menú desplegable */
 .dropdown-content {
-    display: none; /* Oculta el contenido por defecto */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 100%; /* Posiciona debajo del activador */
-    left: 0; /* Alinea a la izquierda del activador */
-    background-color: #1f1f1f; /* Color de fondo */
-    min-width: 160px; /* Ancho mínimo */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra */
-    padding: 0; /* Sin relleno */
-    z-index: 2; /* Sobre otros elementos */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f1f1f;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    z-index: 2;
 }
 
-/* Lista dentro del contenido del menú desplegable */
 .dropdown-content ul {
-    list-style: none; /* Elimina los puntos de lista */
-    padding: 0; /* Sin relleno */
-    margin: 0; /* Sin márgenes */
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-/* Elementos de la lista dentro del contenido del menú desplegable */
 .dropdown-content .nav-item {
-    border-bottom: 1px solid #575757; /* Línea divisoria */
+    border-bottom: 1px solid #575757;
 }
 
-/* Enlaces dentro del contenido del menú desplegable */
 .dropdown-content .nav-link {
-    padding: 12px 16px; /* Espaciado interno */
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-    display: block; /* Ocupa todo el espacio disponible */
-    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Enlaces dentro del contenido del menú desplegable al pasar el ratón */
 .dropdown-content .nav-link:hover {
-    background-color: #e23636; /* Color de fondo al pasar el ratón */
+    background-color: #e23636;
 }
 
-/* Muestra el contenido del menú desplegable al pasar el ratón sobre el contenedor */
 .dropdown:hover .dropdown-content {
-    display: block; /* Muestra el contenido */
+    display: block;
 }
 
-/* Estilo para el botón de menú en pantallas pequeñas */
 .menu-toggle {
-    display: none; /* Oculta el botón por defecto */
-    background-color: #1f1f1f; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px 15px; /* Espaciado interno */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size: 16px; /* Tamaño de fuente */
-    position: absolute; /* Posicionamiento absoluto */
-    right: 15px; /* Alinea a la derecha */
+    display: none;
+    background-color: #1f1f1f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
 }
 
-/* Oculta el botón de menú cuando el menú está activo */
 #navbar-collapse.active ~ .menu-toggle {
-    display: none; /* Oculta el botón cuando el menú está abierto */
+    display: none;
 }
 
-/* Estilo para el menú desplegable cuando está activo */
 #navbar-collapse.active {
-    display: flex; /* Muestra el menú como flexbox */
-    flex-direction: column; /* Disposición en columna */
-    width: 100%; /* Ancho completo */
-    position: fixed; /* Posicionamiento fijo */
-    top: 0; /* Coloca el menú en la parte superior */
-    left: 0; /* Coloca el menú en el borde izquierdo */
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
-    height: 100vh; /* Altura completa de la ventana */
-    z-index: 1; /* Sobre otros elementos */
-    overflow-y: auto; /* Habilita desplazamiento vertical si es necesario */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    z-index: 1;
+    overflow-y: auto;
 }
 
-/* Clase para ocultar el desplazamiento en el cuerpo cuando el menú está activo */
 .no-scroll {
-    overflow: hidden; /* Oculta el desplazamiento del cuerpo */
+    overflow: hidden;
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     #navbar-collapse {
-        display: none; /* Oculta el menú por defecto */
+        display: none;
     }
 
     #navbar-collapse.active {
-        display: flex; /* Muestra el menú cuando está activo */
+        display: flex;
     }
 
     .navbar-nav {
-        flex-direction: column; /* Disposición en columna para los elementos de navegación */
-        width: 100%; /* Ancho completo */
+        flex-direction: column;
+        width: 100%;
     }
 
     .navbar-nav .nav-item {
-        width: 100%; /* Ancho completo para cada elemento de navegación */
+        width: 100%;
     }
 
     .dropdown-content {
-        position: static; /* Posiciona el contenido del menú desplegable de manera estática */
-        box-shadow: none; /* Elimina la sombra */
+        position: static;
+        box-shadow: none;
     }
 
     .menu-toggle {
-        display: block; /* Muestra el botón en pantallas pequeñas */
+        display: block;
     }
 }
