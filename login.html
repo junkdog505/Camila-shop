@@ -7,6 +7,8 @@
     <title>Camila Shop | Ingreso</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/login.css" />
+
     <style>
         /* Aquí puedes agregar tus estilos CSS si lo prefieres en línea */
     </style>
@@ -70,10 +72,21 @@
         </nav>
       </header>
 
-    <main>
-        <!-- Contenido principal aquí -->
+      <main>
+        <div class="login-container">
+            <h1>Iniciar Sesión</h1>
+            <p>Por favor, ingresa tus datos para acceder a tu cuenta.</p>
+            <form action="/login" method="post">
+                <input type="text" name="username" placeholder="Nombre de usuario" required />
+                <input type="password" name="password" placeholder="Contraseña" required />
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div class="footer">
+                <p><a href="/registro.html">¿No tienes una cuenta? Regístrate aquí</a></p>
+                <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+            </div>
+        </div>
     </main>
-
 
 
     <script src="/js/script.js">

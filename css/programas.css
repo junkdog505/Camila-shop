@@ -1,0 +1,90 @@
+.download-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.download-container p {
+
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.download-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f1f1;
+}
+
+.download-item img {
+  max-width: 250px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.download-item h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #333;
+}
+
+.download-item p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn i {
+  margin-left: 8px;
+}
+
+.btn:hover {
+  background-color: #e23636;
+}
+
+@media (max-width: 768px) {
+  .download-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-item img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    display: block;
+    max-width: 200px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .download-container p {
+    font-size: 16px;
+  }
+}

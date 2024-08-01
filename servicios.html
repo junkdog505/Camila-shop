@@ -6,6 +6,10 @@
     <title>Camila Shop | Servicios</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/servicios.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <style>
       /* Aquí puedes agregar tus estilos CSS si lo prefieres en línea */
     </style>
@@ -30,8 +34,18 @@
               <li class="nav-item">
                 <a class="nav-link" href="/nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/productos.html">Productos</a>
+              <li class="nav-item dropdown">
+                <span class="dropdown-toggle">Productos</span>
+                <div class="dropdown-content">
+                  <ul>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/productosProcesadores.html">Procesadores</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/productosPlacasMadres.html">Placas Madres</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/servicios.html">Servicios</a>
@@ -58,9 +72,103 @@
       </nav>
     </header>
 
+
     <main>
-      <!-- Contenido principal aquí -->
+      <div class="service-container">
+        <section class="service-item">
+          <img src="assets/images/soporte-tecnico.png" alt="Servicio Técnico">
+          <div>
+            <h2>Servicio Técnico</h2>
+            <p>Ofrecemos un servicio técnico profesional para diagnosticar y reparar cualquier problema con tus dispositivos electrónicos y componentes de PC.</p>
+            <ul>
+              <li>Diagnóstico de fallos</li>
+              <li>Reparación de componentes</li>
+              <li>Optimización del sistema</li>
+              <li>Recuperación de datos</li>
+            </ul>
+            <div class="contact-info">
+              <h3>Contacto</h3>
+              <p>Nombre: Juan Pérez</p>
+              <p>Teléfono: +51 951456852</p>
+              <p>Horario: Lunes a Viernes, 9:00 - 18:00</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="service-item">
+          <img src="assets/images/servicio-tecnico.png" alt="Mantenimiento">
+          <div>
+            <h2>Mantenimiento</h2>
+            <p>Realizamos mantenimiento preventivo y correctivo para asegurar que tus equipos funcionen de manera óptima y prolongar su vida útil.</p>
+            <ul>
+              <li>Mantenimiento preventivo</li>
+              <li>Limpieza interna de equipos</li>
+              <li>Actualización de software</li>
+              <li>Reemplazo de piezas desgastadas</li>
+            </ul>
+            <div class="contact-info">
+              <h3>Contacto</h3>
+              <p>Nombre: Laura Gómez</p>
+              <p>Teléfono: +51 92250001</p>
+              <p>Horario: Lunes a Viernes, 10:00 - 17:00</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="service-item">
+          <img src="assets/images/asesoría.webp" alt="Asesoría">
+          <div>
+            <h2>Asesoría</h2>
+            <p>Brindamos asesoría experta en la selección de componentes, configuración de sistemas y optimización del rendimiento de tus equipos.</p>
+            <ul>
+              <li>Selección de componentes</li>
+              <li>Configuración de sistemas</li>
+              <li>Optimización del rendimiento</li>
+              <li>Solución de problemas técnicos</li>
+            </ul>
+            <div class="contact-info">
+              <h3>Contacto</h3>
+              <p>Nombre: Carlos Fernández</p>
+              <p>Teléfono: +51 965456559</p>
+              <p>Horario: Lunes a Viernes, 11:00 - 19:00</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="service-item">
+          <img src="assets/images/venta.png" alt="Venta de Componentes">
+          <div>
+            <h2>Venta de Componentes Electrónicos y de PC</h2>
+            <p>Disponemos de una amplia gama de componentes electrónicos y de PC de alta calidad para satisfacer todas tus necesidades tecnológicas.</p>
+            <ul>
+              <li>Procesadores</li>
+              <li>Placas madre</li>
+              <li>Memoria RAM</li>
+              <li>Discos duros y SSDs</li>
+            </ul>
+            <div class="contact-info">
+              <h3>Contacto</h3>
+              <p>Nombre: Marta Ruiz</p>
+              <p>Teléfono: +51 98983033</p>
+              <p>Horario: Lunes a Viernes, 9:00 - 18:00</p>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link instagram">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+              <a href="#" class="social-link whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+              <a href="#" class="social-link facebook">
+                <i class="fa-brands fa-facebook"></i> Facebook
+              </a>
+            </div>
+            
+          </div>
+        </section>
+      </div>
     </main>
+
 
     <script src="/js/script.js"></script>
   </body>

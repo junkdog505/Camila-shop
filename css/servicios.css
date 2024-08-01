@@ -1,0 +1,156 @@
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.service-item h2 {
+  margin-top: 0;
+  font-size: 26px;
+  color: #e23636;
+}
+
+.service-item p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.service-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.service-item ul li {
+  font-size: 16px;
+  color: #fff;
+  background-color: #e23636;
+  border-radius: 16px;
+  padding: 8px 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contact-info, .social-links {
+  margin-top: 20px;
+}
+
+.contact-info h3, .social-links h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #e23636;
+}
+
+.contact-info p, .social-links a {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-links h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #ff5722;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 10px 15px;
+  border-radius: 25px;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-link.instagram {
+  background-color: #C13584;
+}
+
+.social-link.whatsapp {
+  background-color: #25D366;
+}
+
+.social-link.facebook {
+  background-color: #1877F2;
+}
+
+.social-link.instagram:hover {
+  background-color: #a32b6c;
+}
+
+.social-link.whatsapp:hover {
+  background-color: #1e8e56;
+}
+
+.social-link.facebook:hover {
+  background-color: #165eab;
+}
+
+@media (max-width: 768px) {
+  .social-links a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .social-links a i {
+    font-size: 18px;
+  }
+
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-item img {
+    margin: 0 auto 15px;
+    max-width: 100%;
+  }
+
+  .contact-info, .social-links {
+    text-align: center;
+  }
+}
