@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,7 +17,11 @@
     <nav class="navbar">
       <div class="container">
         <a class="navbar-brand" href="/index.html">CamilaShop</a>
-        <button id="menu-toggle" class="menu-toggle nav-link" aria-label="Toggle navigation">
+        <button
+          id="menu-toggle"
+          class="menu-toggle nav-link"
+          aria-label="Toggle navigation"
+        >
           Menú
         </button>
         <div id="navbar-collapse" class="navbar-collapse">
@@ -29,8 +32,18 @@
             <li class="nav-item">
               <a class="nav-link" href="/nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/productos.html">Productos</a>
+            <li class="nav-item dropdown">
+              <span class="dropdown-toggle">Productos</span>
+              <div class="dropdown-content">
+                <ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/productosProcesadores.html">Procesadores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/productosPlacasMadres.html">Placas Madres</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/servicios.html">Servicios</a>
@@ -63,9 +76,9 @@
       <p>Encuentra los mejores productos electrónicos al mejor precio</p>
       <a href="/productos.html" class="btn-primary">Explorar Productos</a>
       <div class="social-links">
-        <a href="#" id="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
-        <a href="#" id="WhatsApp"><i class="fa fa-whatsapp" aria-hidden="true"></i>WhatsApp</a>
-        <a href="#" id="Facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a>
+        <a href="#" id="Instagram"><i class="fa-brands fa-instagram"></i></i>Instagram</a>
+        <a href="#" id="WhatsApp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        <a href="#" id="Facebook"><i class="fa-brands fa-facebook"></i>Facebook</a>
       </div>
     </section>
   </main>
@@ -85,9 +98,9 @@
       <div class="footer-section">
         <h3><i class="fa fa-globe" aria-hidden="true"></i> Redes Sociales</h3>
         <div class="social-links">
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
         </div>
       </div>
     </div>

@@ -1,0 +1,146 @@
+/* Estilo general del cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas por fila */
+  gap: 2rem; /* Mayor espaciado entre las cartas */
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; /* Imágenes a la izquierda y detalles a la derecha */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 400px; /* Tamaño estático de las cartas */
+  box-sizing: border-box;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Ajusta la imagen para que se ajuste al contenedor */
+  border-right: 1px solid #ddd;
+}
+
+.product-info {
+  flex: 1.5; /* Hace que la sección de información sea un poco más ancha */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido verticalmente */
+}
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.details p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.details .price {
+  font-size: 1.2rem; /* Tamaño del precio más grande */
+  font-weight: bold; /* Precio en negrita */
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.quantity-input {
+  width: 60px;
+  text-align: center;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.quantity button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.quantity button:hover {
+  background-color: #e23636; /* Cambia el color del botón en hover */
+}
+
+.quantity button:focus {
+  outline: none;
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .gallery {
+      grid-template-columns: 1fr; /* Una columna en pantallas medianas */
+      gap: 1.5rem; /* Ajusta el espaciado en pantallas más pequeñas */
+  }
+
+  .product {
+      flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+      height: auto; /* Permite que las cartas ajusten su altura en pantallas más pequeñas */
+  }
+
+  .product-info {
+      text-align: center; /* Centra el texto en pantallas más pequeñas */
+  }
+
+  .product-image img {
+      max-height: 200px; /* Limita la altura máxima de la imagen en pantallas pequeñas */
+  }
+
+  .quantity {
+      justify-content: center; /* Centra el contenido del botón y campo de cantidad */
+      margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+      gap: 1rem; /* Ajusta el espaciado en pantallas muy pequeñas */
+  }
+}
