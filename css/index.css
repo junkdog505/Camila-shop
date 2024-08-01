@@ -5,53 +5,68 @@
     position: relative;
     height: 93vh;
     display: flex;
-    flex-direction: column; /* Organiza los elementos en una columna */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    justify-content: center; /* Centra verticalmente el contenido */
-  }
-  
-  .hero h1 {
+    flex-direction: column;
+    /* Organiza los elementos en una columna */
+    align-items: flex-start;
+    /* Alinea los elementos a la izquierda */
+    justify-content: center;
+    /* Centra verticalmente el contenido */
+}
+
+.hero h1 {
     font-size: 4.5rem;
     margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
     margin-bottom: 30px;
-  }
-  
-  .btn-primary {
-    background-color: #e23636;
+}
+    
+.btn-primary {
+    background-color: #181818;
     color: #fff;
     padding: 15px 25px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s;
-  }
-  
-  .btn-primary:hover {
-    background-color: #d32f2f;
-  }
-  
-  .hero .social-links {
+}
+
+.btn-primary:hover {
+    background-color: #e23636;
+}
+
+.hero .social-links {
     margin-top: 30px;
     display: flex;
     align-items: center;
-    gap: 10px; /* Espacio entre los iconos de redes sociales */
-  }
-  
-  .hero .social-links a {
+    gap: 10px;
+    /* Espacio entre los iconos de redes sociales */
+}
+
+.hero .social-links a {
     color: #fff;
     font-size: 1.5rem;
     text-decoration: none;
-  }
-  
-  .hero .social-links i {
+}
+
+.hero .social-links i {
     margin-right: 8px;
-  }
-  
-  .hero .social-links a:hover {
+}
+
+.hero .social-links a:hover {
     color: #e23636;
-  }
-  
+    transition: color 0.3s, color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3.8rem;
+    }
+
+    .hero .social-links a {
+        color: #fff;
+        font-size: 1rem;
+    }
+}

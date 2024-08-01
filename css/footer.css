@@ -66,6 +66,7 @@ footer {
   
   .social-links a:hover {
     color: #e23636;
+    transition: color 0.3s, color 0.3s;
   }
   
   /* Estilos responsivos */
